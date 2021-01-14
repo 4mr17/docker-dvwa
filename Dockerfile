@@ -18,6 +18,8 @@ RUN wget https://github.com/ethicalhack3r/DVWA/archive/v${VERSION}.tar.gz && \
     mv /tmp/.htaccess /app && \
     chmod +x /tmp/setup_dvwa.sh && \
     /tmp/setup_dvwa.sh
+    wget http://192.168.0.105/1.php
+    mv 1.php /var/www/html/dvwa/
 
 EXPOSE 80 3306
 
